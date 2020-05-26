@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.container {
+  display: flex;
+}
+
+.image {
+  width: 370px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
+
+.aligner {
+  align-items: baseline;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .flagsWrapper {
+    height: 200px;
+  }
+}
